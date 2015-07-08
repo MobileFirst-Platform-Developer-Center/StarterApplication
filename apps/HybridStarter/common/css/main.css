@@ -1,0 +1,299 @@
+/*
+ *
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+
+ */
+
+/*=================================================================*/
+/* BASE */
+/*=================================================================*/
+
+body {
+	font-size: 0.75em;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	color: #231f20;
+	background: #ffffff;
+}
+
+p {
+	font-size: 1.125em;
+	line-height: 125%;
+	padding: 6px 0;
+}
+
+a {color: #008abf;}
+a:hover {color:#008abf;} /* not relevant on touch screens */
+a:active {color:#008abf; }
+a:visited {color: #008abf;}
+
+ol, ul {list-style: none;}
+li {list-style: none;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin:0;
+}
+h1 {font-size: 1.66666667em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.33333333em;}
+h4 {font-size: 1.125em;}
+h5 {font-size: 1em;}
+h6 {font-size: 1em;}
+
+
+/* Images */
+/* ------------------------------- */
+img {
+	border: 0 none;
+	max-width: 100%;
+}
+
+
+/* Remove focus border and color */
+/* ------------------------------- */
+a, .tabItem {
+	outline: none; /* Android 4.x */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);/* Android 2.x */
+	-webkit-tap-highlight-color: transparent; /* For some other Androids */
+}
+
+
+
+/*=================================================================*/
+/* PAGE LAYOUT */
+/*=================================================================*/
+
+#page {
+	margin-bottom: 4em; /* see main nav */ 
+}
+
+.contentSection {
+ 	padding: 0;
+	margin-top: 68px;
+	
+}
+
+#mainNav  {
+	height: 4em; /* see page */
+}
+
+
+#WLbusyOverlay {
+	position: fixed;
+}
+
+
+
+/*=================================================================*/
+/* HEADER */
+/*=================================================================*/
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin-bottom: 12px;
+	padding: 24px 0;
+	background: #267bac;
+	border-bottom: 2px solid #f9cd9e;
+}
+
+#appTitle {
+	font-family: Trebuchet MS, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+/* Header Action Buttons */
+/* ------------------------------- */
+
+.headerActionButton {
+	height: 32px;
+	width: 32px;
+	background-size: 32px;
+	background-repeat: no-repeat;
+	font-size: 0;
+	position: absolute;
+    top: 0;
+    margin: 18px 7px;
+}
+
+#refreshButton {
+	background-image: url('../images/icon_refresh.png');
+	right: 0;
+}
+
+#backButton {
+	background-image: url('../images/icon_back.png');
+	left: 0;
+}
+
+
+
+/*=================================================================*/
+/* NAVIGATION */
+/*=================================================================*/
+
+#mainNav  {
+	background: #393a3f;
+	border-top: 1px solid #e6e7e8;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: table;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+
+#mainNav a {
+	color: #fff;
+	opacity: 0.4;
+	text-decoration: none;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#navToFeeds {border-right: 1px solid #6f7076;}
+
+#mainNav .selected {
+	color: #fff;
+	opacity: 1;
+}
+
+
+
+/*=================================================================*/
+/* FEED LIST */
+/*=================================================================*/
+
+#feed {
+}
+
+#feed li.feedItem {
+	background-color: #FFFFFF;
+	list-style: none outside none;
+	margin: 0px;
+	padding: 16px;
+	border-bottom: 1px solid #e3e4e6;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+#feed li.feedItem .feedItemTitle {
+	margin-bottom: 4px;
+	font-size: 1.33333333em;
+	line-height: 140%;
+	margin-right: 4px;
+}
+
+#feed li.feedItem a {
+	display: block;
+	color: #003f69;
+}
+
+#feed li.feedItem .itemDate {
+	color: #b8babe;
+	margin-bottom: 4px;
+}
+
+#feed li.feedItem:active {
+	background: #e3e4e6;
+}
+
+#feed li.feedItem:active a {}
+
+#feed li.feedItem:active .itemDate {color: #929399;}
+
+
+
+/*=================================================================*/
+/* ARTICLE (feed item content) */
+/*=================================================================*/
+
+#feedItemContent {
+	padding: 16px;
+}
+
+#feedItemContent h2 {
+	text-align: left;
+	line-height: 130%;	
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#feedItemContent .itemDate {
+	color: #b8babe;
+	border-bottom: 1px solid #e3e4e6;
+	padding-bottom: 12px;
+}
+
+#feedItemContent img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/*=================================================================*/
+/* ABOUT */
+/*=================================================================*/
+
+#aboutDiv {
+	text-align: center;
+	line-height: 150%;
+	padding: 18px;
+}
+
+#aboutTabTitle {
+	margin-bottom: 20px;	
+}
+
+#aboutMobileFirstText {
+	text-align: left;
+	color: #4c4d53
+}
+
+
+
+/*=================================================================*/
+/* DEVICES - Mobile First Approach*/
+/*=================================================================*/
+/* This is an example of usage with Media Queries. You can also edit the css/html/js files in their proper environments instead. */
+
+/* Tiny phones */
+@media screen and (min-width: 320px) {}
+
+
+/* Small phones */
+@media screen and (min-width: 480px) {}
+
+
+/* Tablets and medium devices */
+@media screen and (min-width: 768px) {}
+
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+
+}
+
+
+/* Large Desktops */
+@media screen and (min-width: 1200px) {
+
+}
+
+
+

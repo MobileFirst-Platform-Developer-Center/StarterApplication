@@ -1,0 +1,81 @@
+/*
+ *
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+
+ */
+ 
+/* this CSS file extends the application CSS file found under common\css */
+
+
+/*=================================================================*/
+/* PAGE LAYOUT */
+/*=================================================================*/
+
+body {
+	font-family: Roboto, Droid Sans, Arial, sans-serif;
+}
+
+#page {
+	margin-bottom:0;
+}
+
+/*=================================================================*/
+/* NAVIGATION */
+/*=================================================================*/
+
+/* Disable navigation bar for Android; use WL.TabBar instead */
+#mainNav {
+	display: none;
+}
+
+/* Fix the WL.TabBar to the bottom without hiding the bottom of the feed */
+.tabBar {
+	bottom: 0;
+	margin-top: 0;
+	top: initial !important;
+}
+
+.contentSection {
+	margin-bottom: 64px;
+}
+
+/* Customize the look & feel of WL.TabBar */
+/* Android TaBar*/
+.tabBar, .tabItem, .tabItemActive, .tabSpan {
+    background: #222222;
+    background: -webkit-gradient(linear,left top, left bottom,from(#222222),to(#464646));
+	background: -webkit-linear-gradient(top,#222222,#464646);
+	background: -moz-linear-gradient(top,#222222,#464646);
+	background: -o-linear-gradient(top,#222222,#464646);
+	background: linear-gradient(top,#222222,#464646);
+	border: none;
+}
+
+.tabItemActive .tabSpan{
+    color: #fff;
+	text-shadow: 0px 2px 4px #58b3f0;
+	filter: dropshadow(color=#58b3f0, offx=3, offy=3);
+}
+
+.tabItem:first-child {
+	border-right: 2px solid #535353;
+	margin-left: -2px;
+}
+
+.tabSpan {
+	background: center 5px;
+    background-repeat: no-repeat;
+    color: #9C9A9C;
+    line-height: 95px;
+    display: block;
+    overflow: hidden;
+    height: 63px;
+    text-align: center;
+}

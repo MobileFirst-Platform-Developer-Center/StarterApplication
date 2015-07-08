@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WorkLightStarter">
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/air"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/blackberry"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/dashboard"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/embedded"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/facebook"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/igoogle"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/ipad"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/mobilewebapp"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/vista"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/windowsphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/windowsphone8"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/blackberry10"/>
+        <wb-resource deploy-path="/" source-path="/server/java"/>
+        <wb-resource deploy-path="/" source-path="/apps/worklightStarter/desktopbrowser"/>
+        <property name="context-root" value="WorkLightStarter"/>
+    </wb-module>
+</project-modules>

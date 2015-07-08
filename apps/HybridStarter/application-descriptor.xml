@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+ --><!-- Attribute "id" must be identical to application folder name -->
+ <application xmlns="http://www.worklight.com/application-descriptor" id="HybridStarter" platformVersion="7.0.0.00.20150402-2001">
+    <displayName>HybridStarter</displayName>
+    <description>HybridStarter</description>
+    <author>
+        <name>application's author</name>
+        <email>application author's e-mail</email>
+        <homepage>http://mycompany.com</homepage>
+        <copyright>Copyright My Company</copyright>
+    </author>
+    <mainFile>index.html</mainFile>
+    <features/>
+    <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
+    <iphone bundleId="com.HybridStarter" version="1.0">
+        <worklightSettings include="false"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+        </security>
+    </iphone>
+       <ipad bundleId="com.HybridStarter" version="1.0">
+        <worklightSettings include="false"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+        </security>
+    </ipad>
+    <android version="1.0">
+        <worklightSettings include="false"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+            <publicSigningKey/>
+            <packageName>Replace this text with the actual package name of the application, which is the value of the 'package' attribute in the 'manifest' element in AndroidManifest.xml file.</packageName>
+        </security>
+    </android>
+    <blackberry version="1.0"/>
+    <blackberry10 version="1.0"/>
+    <windowsPhone8 version="1.0">
+        <uuid>87ff6058-3209-433f-8604-5457633b5bfa</uuid>
+    </windowsPhone8>
+    <mobileWebApp cacheManifest="no-use"/>
+    <windows8 version="1.0">
+        <uuid>ff1a9379-5361-41f6-ad64-0ed28a28dfd5</uuid>
+    </windows8>
+    <desktopBrowser cacheManifest="no-use"/>
+</application>
