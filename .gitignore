@@ -61,3 +61,5 @@ apps/HybridStarter/ipad/native
 apps/HybridStarter/iphone/native
 apps/HybridStarter/windows8/native
 apps/HybridStarter/windowsphone8/native
+.jazzignore
+/pom.xml
