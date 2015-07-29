@@ -64,3 +64,4 @@ apps/HybridStarter/windowsphone8/native
 .jazzignore
 /pom.xml
 *.backup.zip
+apps/HybridStarter/blackberry10/native
