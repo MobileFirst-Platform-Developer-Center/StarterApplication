@@ -8,8 +8,7 @@
     FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
     INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
     IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
- --><!-- Attribute "id" must be identical to application folder name -->
- <application xmlns="http://www.worklight.com/application-descriptor" id="HybridStarter" platformVersion="7.0.0.00.20150402-2001">
+ --><!-- Attribute "id" must be identical to application folder name --><application xmlns="http://www.worklight.com/application-descriptor" id="HybridStarter" platformVersion="7.1.0.00.20150728-0630">
     <displayName>HybridStarter</displayName>
     <description>HybridStarter</description>
     <author>
@@ -54,4 +53,7 @@
         <uuid>ff1a9379-5361-41f6-ad64-0ed28a28dfd5</uuid>
     </windows8>
     <desktopBrowser cacheManifest="no-use"/>
+<windowsphoneuniversal version="1.0">
+        <uuid>98a1794d-2cd0-48eb-a066-63084e79fb71</uuid>
+    </windowsphoneuniversal>
 </application>
