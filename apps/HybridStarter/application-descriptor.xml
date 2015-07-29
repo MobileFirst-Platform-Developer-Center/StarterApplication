@@ -43,7 +43,7 @@
             <packageName>Replace this text with the actual package name of the application, which is the value of the 'package' attribute in the 'manifest' element in AndroidManifest.xml file.</packageName>
         </security>
     </android>
-    <blackberry version="1.0"/>
+    
     <blackberry10 version="1.0"/>
     <windowsPhone8 version="1.0">
         <uuid>87ff6058-3209-433f-8604-5457633b5bfa</uuid>
